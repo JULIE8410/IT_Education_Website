@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html, css, javascript">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <title>Apply</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul>
+                <li><a href="main.html">HOME</a></li> <!-- main page -->
+                <li><a href="about.html">ABOUT</a></li> <!-- about page - introduction -->
+                <li><a href="courses.html">COURSES</a></li> <!-- courses page - show course info  -->
+                <li><a href="apply.html">APLLY</a></li><!-- apply page - application form  -->
+            </ul>
+        </div>
+        <div class="courses-area">
+            <div class="page-title">
+                <div class="title">COURSES</div>
+                <div class="t-underbar"></div>
+            </div>
+        </div>
+        <div class="courses-content">
+            <div class="course-info">
+                <ul>
+                    <li><button class="btnCourses" onclick="showAll()">ALL</button></li>
+                    <li><button class="btnCourses" onclick="showUIUX()">UI/UX</button></li>
+                    <li><button class="btnCourses" onclick="showJAVA()">JAVA</button></li>
+                    <li><button class="btnCourses" onclick="showDB()">&nbsp;DB&nbsp;</button></li>
+                </ul>
+            </div><br><br>
+            <div class="course-info2">
+                <div class="items-uiux" id="uiux1">
+                    <div class="courseImg">
+                        <div><img src="img/uiux1.jpg" alt=""></div>
+                    </div>
+                    <div class="main">UI/UX Ⅰ <span class="label beginner">Beginner</span> </div>
+                    <div class="sub">Dec 2 2019 ~ Dec 27 2019<span class='weeks'>(4Weeks)</span></div>
+                    <div class="text">Make your own portfolio</div>
+                    <a class="btnApply" href="apply.html">Apply</a>
+
+                </div>
+
+                <div class="items-uiux" id="uiux2">
+                    <div class="courseImg">
+                        <div><img src="img/uiux2.jpg" alt=""></div>
+                    </div>
+                    <div class="main">UI/UX Ⅱ <span class="label intermediate">Intermediate</span></div>
+                    <div class="sub">Jan 6 2020 ~ Feb 28 2020<span class='weeks'>(8Weeks)</span></div>
+                    <div class="text">This is an online course</div>
+                    <a class="btnApply" href="apply.html">Apply</a>
+                </div>
+                <div class="items-java" id="java1">
+                    <div class="courseImg">
+                        <div><img src="img/java1.jpg" alt=""></div>
+                    </div>
+                    <div class="main">Java Programming <span class="label beginner">Beginner</span></div>
+                    <div class="sub">Dec 2 2019 ~ Dec 27 2019<span class='weeks'>(4Weeks)</span></div>
+                    <div class="text">Learn basic programming grammer</div>
+                    <a class="btnApply" href="apply.html">Apply</a>
+                </div>
+                <div class="items-java" id="java2">
+                    <div class="courseImg">
+                        <div><img src="img/java2.jpg" alt=""></div>
+                    </div>
+                    <div class="main">Java workshop for workers <span class="label advanced">Advanced</span></div>
+                    <div class="sub">Jan 6 2020 ~ Feb 28 2020<span class='weeks'>(8Weeks)</span></div>
+                    <div class="text">This workshop is held in the evening</div>
+                    <a class="btnApply" href="apply.html">Apply</a>
+                </div>
+                <div class="items-db" id="db1">
+                    <div class="courseImg">
+                        <div><img src="img/db1.jpg" alt=""></div>
+                    </div>
+                    <div class="main">DB workshop for workers <span class="label intermediate">Intermediate</span></div>
+                    <div class="sub">Jan 6 2020 ~ Jan 7 2020</div>
+                    <div class="text">Share the latest trend</div>
+                    <a class="btnApply" href="apply.html">Apply</a>
+                </div>
+                <div class="items-db" id="db2">
+                    <div class="courseImg">
+                        <div><img src="img/db2.jpg" alt=""></div>
+                    </div>
+                    <div class="main">DB master course <span class="label advanced">Advanced</span></div>
+                    <div class="sub">Jan 6 2020 ~ Feb 28 2020<span class='weeks'>(8Weeks)</span></div>
+                    <div class="text">Oracle, My-SQL</div>
+                    <a class="btnApply" href="apply.html">Apply</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="footerL" id="changeFooter">
+            <span>&copy;2019 Hyeon Ju Education. All Rights Reserved.</span>
+        </div>
+        <script src="js/courses.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html, css, javascript">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <title>APPLY</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul>
+                <li><a href="main.html">HOME</a></li> <!-- main page -->
+                <li><a href="about.html">ABOUT</a></li> <!-- about page - introduction -->
+                <li><a href="courses.html">COURSES</a></li> <!-- courses page - show course info  -->
+                <li><a href="apply.html">APLLY</a></li><!-- apply page - application form  -->
+            </ul>
+        </div>
+        <div class="apply-area">
+            <div class="page-title">
+                <div class="title">APPLY</div>
+                <div class="t-underbar"></div>
+            </div>
+            <div class="apply-content">
+                <p class="courseInfo">Choose a course that you want to take.
+                    &nbsp;&nbsp;&nbsp;&lt;<span id="time"></span>&gt;
+                </p>
+                <br>
+                <div class="selectCourse">
+                    <select id="mycourse" name="mycourse" onchange="courseChange(this.value)">
+                        <option value="UI/UX course for beginners" selected>UI/UX course for beginners
+                            (Dec 2 2019 ~ Dec 27 2019)
+                        </option>
+                        <option value="UI/UX course for intermediate">UI/UX course for intermediate
+                            (Jan 6 2020 ~ Feb 28 2020)
+                        </option>
+                        <option value="Java for beginners">Java for beginners
+                            (Dec 2 2019 ~ Dec 27 2019)
+                        </option>
+                        <option value="Java for workers">Java for workers
+                            (Jan 6 2020 ~ Feb 28 2020)
+                        </option>
+                        <option value="DB workshop for workers">DB workshop for workers
+                            (Jan 6 2020 ~ Jan 7 2020)
+                        </option>
+                        <option value="DB master course">DB master course
+                            (Jan 6 2020 ~ Feb 28 2020)
+                        </option>
+                    </select>
+                </div>
+
+                <div class="frm">
+                    <form name="myForm" action="apply.html" onsubmit="return validateForm()" method="post">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <div class="row">
+                                <div class="first">
+                                    <label for="fName">First Name : </label>
+                                </div>
+                                <div class="second">
+                                    <input type="text" name="firstName" id="fName" size="30" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label for="lName">Last Name : </label>
+                                </div>
+                                <div class="second">
+                                    <input type="text" name="lastName" id="lName" size="30">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label for="phone">Phone : </label>
+                                </div>
+                                <div class="second">
+                                    <input type="tel" name="tel" id="phone" size="30" placeholder="x-xxx-xxxx"
+                                        pattern="\d{1}-\d{3}-\d{4}">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label for="email">Email : </label>
+                                </div>
+                                <div class="second">
+                                    <input type="text" name="email" id="email"
+                                        placeholder="kimh101@student.douglascollege.ca" size="50">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label for="addr">Address : </label>
+                                </div>
+                                <div class="second">
+                                    <input type="text" name="addr" id="addr" size="100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label>Gender : </label>
+                                </div>
+                                <div class="second">
+                                    <label for="male"><input type="radio" name="gender" value="male"
+                                            id="male">Male</label>
+                                    <label for="female"><input type="radio" name="gender" value="female"
+                                            id="female">Female</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Course Information</legend>
+                            <div class="row">
+                                <div class="first">
+                                    <label>Course Name : </label>
+                                </div>
+                                <div class="second">
+                                    <span id="demo"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label>Option : </label>
+                                </div>
+                                <div class="second">
+                                    <label for="l"><input type="checkbox" id="l" name="lunch"
+                                            value="lunch">Lunch</label>
+                                    <label for="b"><input type="checkbox" id="b" name="booklet"
+                                            value="booklet">Booklet</label>
+                                    <label for="c"><input type="checkbox" id="c" name="laptop"
+                                            value="laptop">Laptop</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="first">
+                                    <label>Comments</label>
+                                </div>
+                                <div class="second">
+                                    <textarea name="comm" id="comm" cols="130" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="chk">
+                            <br>
+                            <div>
+                                <label for="q1"><input type="checkbox" name="q1" id="q1"> I'd like to receive news,
+                                    promotions,
+                                    information and offers</label><br>
+                                <label for="q2"><input type="checkbox" name="q2" id="q2"> By applying a course, I
+                                    consent that
+                                    my personal information will be stored</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <br>
+                            <input type="submit" value="SUBMIT">
+                            <input type="reset" value="RESET">
+                        </div>
+                    </form>
+                </div>
+
+            </div><br>
+        </div>
+        <div class="footerL">
+            <span>&copy;2019 Hyeon Ju Education. All Rights Reserved.</span>
+        </div>
+        <script src="js/apply.js"></script>
+    </div>
+</body>
+
+</html>

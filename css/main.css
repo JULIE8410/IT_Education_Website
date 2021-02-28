@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box; /* includ the padding and border in an element's total width and height */
+}
+
+body {  
+    font-family: 'Heebo', sans-serif;   /* set font type */
+    background-image: url(img/logo.jpg);    /* attach logo on the background */
+    background-position: 2vw 6vmax;     /* set position */
+    background-attachment: scroll;  /* scroll along with the element */
+    background-repeat: no-repeat;
+    background-size: 100px;
+    
+}
+.header {   /* specify menu part */
+    top: 0; /* set the position */
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: salmon;
+    float: left;    /* layout from left */
+    margin-bottom: 20px;    /* set the margin for bottom */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);  /* make a shadow */
+    text-align: center; /* text alignment : center */
+}
+.header ul {    
+    list-style-type: none; /* no list style */
+}
+.header ul li {
+    display: inline-block;  /* display li elements on the same line */
+}
+.header a { /* link */
+    display: inline-block;  /* the element can sit next to other elements */
+    text-decoration: none;  /* no decoration */
+    padding: 0 40px;        /* top,bottom : 0, left, right : 40px */
+    cursor: pointer;        /* when a mouse is over the words, it is changed */
+}
+.header a:link {    /* link property */
+    font-size: 20px;    /* set font size */
+    color: white;     /* font color */
+}
+.header a:visited{  /* visited link */
+    color: white;    /* font color */
+}
+.header a:hover{ /* when a mouse is over */
+    color: rgb(14, 8, 4);    /* font color */
+    font-size: 20px;            /* set font size */
+    font-weight: bold;      /* make the font bolder */
+}
+/* main page */
+.imageSlide img {   /* image size */
+    width: 60%;
+    height: 40%;
+}
+.welcome1 { /* for the welcome message, above the main images */
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: bold;
+    text-align: center;
+}
+.welcome2 { /* for the message below the main images */
+    font-size: 20px;      /* set font size */
+    font: bold;           /* make the font bolder */
+    text-align: center;   /* text alignment */
+}
+/* each page sub title */
+.page-title {   /* page title area */
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    float: none;    /* The element does not float */
+}
+.page-title .title {    /* page title font */
+    font: 40px bold;
+    color: black;
+}
+.page-title .t-underbar {   /* page title underbar */
+    background: linear-gradient(#FCE38A, #F38181); /* It starts #FCE38A at the top */
+    width : 200px;
+    height: 8px;
+    margin: auto;   /* put the bar in the middle of the page */
+}
+
+/* main page content */
+.content {
+    text-align: center;
+}
+
+/* about page */
+
+.courses-content .course-info ul {  
+    list-style-type: none;  /* no list style */
+}
+.courses-content .course-info ul li{
+    display: inline-block;  /* display elements as inline element*/
+    padding: 0 10px;    /* top bottom : 0, left, right: 10px */
+}
+.about-content .picture{
+    display: block;     /* display elements as block element*/
+    padding-right: 20px;    /* including space of the right side*/
+    text-align: right; 
+}
+.about-content {
+    overflow: auto; /* if overflow is cliped, but a scroll-bar is added */
+    display: flex; /* display becomes flexible */
+    width: 100%;
+}
+.enjoyMusic {
+    font-size: 16px;
+    color: salmon;
+
+}
+.about-content .intro ul{
+    list-style-type: none;  /* no list style */
+}
+.about-content .intro ul img{   /* phone, email image size */
+    width: 25px;
+    height: 20px;
+}
+.about-content .intro a{    /* no link style */
+    text-decoration: none;
+}
+
+.about-content .picture {   /* for happy woman image */
+    float: left;
+    flex : 1;
+    /* width: 50%; */
+}
+.about-content .text {  /* texts right side */
+    float: left;
+    width: 50%;
+}
+
+.text a {   /* text - click me */
+    padding: 0 20px;
+    text-decoration: none;
+    font: bold;
+    color: salmon;
+}
+.sns {
+    float: right;
+}
+.sns a {    /* SNS link */
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+.sns img {  /* SNS image size */
+    width: 20px;
+    height: 20px;
+}
+.learn {    /* sub title - You can learn.. */
+    font: 40px bold;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+.service-area { /* under You can learn */
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.service {  /* each programming language */
+    font-size: 30px;
+}
+.service-info { /* inner space for programming language explanation */
+    padding: 3px 20px;  /* top, bottom: 3px, right,left:20px  */
+}
+.item1 {    /* first display - javascript */
+    max-width: 33.3%;
+    flex: 1;
+}
+.item2 {    /* second display - java */
+    max-width: 33.3%;
+    flex: 2;
+}
+.item3 {    /* third display - database */
+    max-width: 33.4%;
+    flex: 3;
+}
+.item1:hover, .item2:hover, .item3:hover { /* when a mouse is over */
+    transform: scale(1.015);
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* courses page */
+.courses-content {
+    text-align: center;
+}
+
+.course-info a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+.courses-content img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+.items-uiux, .items-db, .items-java {
+    margin-top: 10px;
+    font : bold;
+}
+#uiux1, #uiux2, #java1, #java2, #db1, #db2 {
+    display: inline-block;
+}
+
+.btnCourses {   /* buttons - ALL, UIUX, JAVA, DB */
+    background-color: rgb(248, 162, 153);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  /* display buttons horizontally */
+    font-size: 16px;
+    border-radius: 5px;
+}
+.btnCourses:hover{  /* when a mouse is over a button */
+    background-color: rgb(251, 129, 116);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.weeks {
+    font: bold;
+    color: blue;
+}
+.main {
+    font: 20px bold;
+}
+.btnApply { /* buttons for apply */
+    background-color: coral;
+    color: white;
+    padding: 2px 20px;
+    border: 0px white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    margin : 5px 0;
+    text-decoration: none;
+}
+.btnApply a{
+    text-decoration: none;
+    color: white;
+}
+.btnApply a:visited {
+    color: white;
+}
+.label{ /* incluse 3 types of box(beginner, intermediate, advanced) */
+    color: white;
+    padding: 0px 8px;
+}
+.beginner { /* make a box named beginner */
+    background-color: green;
+    border-radius: 5px;
+}
+.intermediate {
+    background-color:dodgerblue;
+    border-radius: 5px;
+}
+.advanced {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+
+/* apply */
+#mycourse{
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.frm {
+    margin-top: 10px;
+}
+fieldset {
+    width: 50%;
+    margin: auto;
+}
+.courseInfo, .selectCourse {
+    text-align: center;
+}
+.courseInfo {
+    background-color: #FCE38A;
+    width: 40%;
+    margin: auto;
+    animation-name: example; /*add an animation using css*/
+    animation-duration: 4s;
+}
+/* When an animation is finished, 
+it changes back to its original style. */
+@keyframes example {
+    from {background-color: #F38181;}
+    to {background-color: #FCE38A;}
+  }
+.frm label{
+    padding: 12px 0;
+}
+
+.frm input[type=text], input[type=tel], input[type=email] select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    resize: vertical; /*resize the height of the element*/
+}
+.first {    /* first column of the form */
+    float: left;
+    text-align: right;
+    width: 30%;
+    margin-top: 6px;
+    padding-right: 1%;
+}
+.second {   /* first colume of the form */
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+}
+
+.row:after{ /* insert content after every element whose class name is row*/
+    content:"";
+    display: table;
+    clear: both;
+}
+.chk { 
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+}
+.btn input {
+    background-color: salmon;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+#time { /* for date */
+    color: blue;
+    text-align: center;
+}
+#demo { /* for course name */
+    color: blue;
+}
+/* footer */
+.footer { /*when the height of the content is smaller than the height of the monitor*/
+    position: absolute;
+    float: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: salmon;
+    text-align: center;
+}
+/* footer */
+.footerL {  /*when the height of the content is bigger than the height of the monitor*/
+    float: left;
+    left: 0;
+    bottom: 0;
+    display: table;
+    content: "";
+    width: 100%;
+    background-color: salmon;
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> <!-- encoding -->
+    <meta name="keywords" content="html, css, javascript"> <!-- define keywords for search engines -->
+    <link rel="stylesheet" href="css/main.css"> <!-- add external stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet"><!-- link fonts -->
+    <title>About</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul>
+                <li><a href="main.html">HOME</a></li> <!-- main page -->
+                <li><a href="about.html">ABOUT</a></li> <!-- about page - introduction -->
+                <li><a href="courses.html">COURSES</a></li> <!-- courses page - show course info  -->
+                <li><a href="apply.html">APLLY</a></li><!-- apply page - application form  -->
+            </ul>
+        </div>
+        <div class="about-area">
+            <div class="page-title">
+                <div class="title">ABOUT</div> <!-- sub title -->
+                <div class="t-underbar"></div>
+            </div>
+            <div class="about-content">
+                <div class="picture">
+                    <img src="img/happywoman.jpg" alt="" width="60%" height="50%">
+                    <br>
+                    <span class="enjoyMusic">Enjoy music!</span>
+                    <audio controls>
+                        <source src="music/background.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="text">
+                    <div class="intro">
+                        <p id="greeting">Hello</p>
+                        <!-- added javascript - A message is different depending on the time -->
+                        I am Hyeonju Kim, a junior developer who is enthusiastic. <br>
+                        I am providing Computer Courses free of charge. <br>
+                        If you are interested in my courses, sign up for the class now!
+                        <img id="bulb" alt="" src="img/bulb1.gif" width="20"> <!-- added javascript - twinkling bulb -->
+                        <br><br>
+                        <a id="clickMe" href="courses.html" onmouseover="largeLetters()" onmouseout="smallLetters()">
+                            <!-- when a mouse is over, it become larger. vise versa -->
+                            Do you want to see my courses? Click me!</a> <br>
+                        <br>
+                        <a href="#youCanLearn">Do you want to see what you can learn?</a>
+                        <br><br><br>
+                        <p>Contacts</p>
+                        <ul>
+                            <li><img src="img/phone.jpg" alt=""> +1 778-855-8410</li>
+                            <li><img src="img/email.jpg" alt=""> kimh101@student.douglascollege.ca</li>
+                        </ul>
+                    </div>
+
+                    <div class="sns">
+                        <!-- each SNS has a link -->
+                        <a href="https://www.facebook.com/aqua84i">
+                            <img src="img/facebook.png" alt="">&nbsp;Facebook</a>
+                        <a href="https://twitter.com/aqua84i"><img src="img/twitter.jpg" alt="">&nbsp;Twitter</a>
+                        <a href="https://www.instagram.com/hyeonju_julie2/"><img src="img/instagram.png" alt="">
+                            &nbsp;Instagram</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <div class="learn" id="youCanLearn">You can learn..</div> <!-- sub title -->
+        <div class="service-area">
+            <div class="item1">
+                <!-- when item1 is hover, it changes its scale -->
+                <div class="icon"> <img src="img/js.jpg" alt=""></div>
+                <div class="service">JAVASCRIPT</div>
+                <div class="service-info"><span>JavaScript is the programming language of HTML and the Web. <br>
+                        JavaScript is easy to learn. </span><br>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="icon"> <img src="img/java.jpg" alt=""></div>
+                <div class="service">JAVA</div>
+                <div class="service-info">Java is a popular programming language, created in 1995. <br>
+                    It is owned by Oracle, and more than 3 billion devices run Java.</div>
+            </div>
+            <div class="item3">
+                <div class="icon"> <img src="img/database.jpg" alt=""></div>
+                <div class="service">DATABASE</div>
+                <div class="service-info">A database is an organized collection of structured information, <br>
+                    or data, typically stored electronically in a computer system</div>
+            </div>
+        </div><br>
+        <br><br><br><br>
+    </div>
+    <div class="footerL">
+        <span>&copy;2019 Hyeon Ju Education. All Rights Reserved.</span>
+    </div>
+    <script src="js/about.js"></script>
+</body>
+
+</html>

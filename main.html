@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html, css, javascript">
+    <link href="css/main.css" rel="stylesheet"> <!-- add external stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet"><!-- link fonts -->
+    <title>Let's coding</title>
+</head>
+
+<body onload="showImage()">
+    <!-- when body is loaded, showImage() is started -->
+    <div class="wrap">
+        <div class="header">
+            <ul>
+                <li><a href="main.html">HOME</a></li> <!-- main page -->
+                <li><a href="about.html">ABOUT</a></li> <!-- about page - introduction -->
+                <li><a href="courses.html">COURSES</a></li><!-- courses page - show course info  -->
+                <li><a href="apply.html">APPLY</a></li> <!-- apply page - application form  -->
+            </ul>
+        </div>
+        <div id="welcome" class="welcome1" onload="showMessage()">&nbsp;</div>
+        <!-- when this element is loading, the function starts -->
+        <div class="content">
+            <div class="imageSlide"><img id="mainImg" src="img/main6.jpg" alt=""></div>
+        </div>
+        <div class="welcome2">Let's start coding together!</div><br>
+
+        <div class="footer">
+            <span>&copy;2019 Hyeon Ju Education. All Rights Reserved.</span>
+        </div>
+        <script src="js/main.js"></script> <!-- add external javascript -->
+    </div>
+</body>
+
+</html>
